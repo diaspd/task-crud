@@ -91,15 +91,10 @@ export const routes = [
         return res.writeHead(404).end()
       }
 
-      if(task.completed_at !== null) {
-        database.patch('tasks', id, {
-          completed_at: null,
-        })
-      } else {
-        database.patch('tasks', id, {
-          completed_at: new Date(),
-        })
-      }
+      const isTaskCompleted = !!task.completed_at
+      const completed_at = isTaskCompleted ? null : new Date()
+
+      database.update('tasks', id, { completed_at })
 
       return res.writeHead(204).end()
     }
