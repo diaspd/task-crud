@@ -49,6 +49,7 @@ To run stream `node ./src/streams/csv-import.js`
 
 This project was developed with the following technologies:
 <b>
+- Nodejs
 </b>
 
 </br>
