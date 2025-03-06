@@ -37,6 +37,7 @@ To run stream `node ./src/streams/csv-import.js`
 
 ## 🌐 Methods:
 - GET: `http://localhost:3333/tasks` </br>
+- POST: `http://localhost:3333/tasks` (passing on body of the requisition: {title="task title", description="task description"}) </br> 
 - DELETE: `http://localhost:3333/tasks/:id` </br>
 - PUT: `http://localhost:3333/tasks/:id` (passing on body of the requisition: {title="task title", description="task description"}) </br> 
 
