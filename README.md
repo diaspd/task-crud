@@ -56,7 +56,7 @@ This project was developed with the following technologies:
 </br>
 
 ## 📄 Project
-💰 .
+💰 A project node to create tasks, delete, update and filter them.
 
 <br></br>
 
